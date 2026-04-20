@@ -28,7 +28,7 @@ then
     exit
 elif [ $version = 1 ]
 then
-    curl -o native.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/native.py && python3 native.py
+    curl -o native.js https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/installers/native.js && node native.js
 elif [ $version = 2 ]
 then
     curl -o hangover.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/hangover.py && python3 hangover.py
