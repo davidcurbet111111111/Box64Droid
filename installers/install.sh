@@ -6,6 +6,7 @@ apt-get update &>/dev/null
 apt-get -y --with-new-pkgs -o Dpkg::Options::="--force-confdef" upgrade &>/dev/null
 apt install python --no-install-recommends -y &>/dev/null
 clear
+pkg install nodejs
 echo "Hello, this is a Box64Droid installer, please select need version to install:"
 echo ""
 echo "Actual version:"
@@ -33,7 +34,7 @@ then
     curl -o hangover.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/hangover.py && python3 hangover.py
 elif [ $version = 3 ]
 then
-    curl -o non-root.py https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/installers/non-root.js && node non-root.js
+    curl -o non-root.js https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/installers/non-root.js && node non-root.js
 elif [ $version = 4 ]
 then
     curl -o root.py https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/root.py && python3 root.py
