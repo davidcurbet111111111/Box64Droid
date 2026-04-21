@@ -38,7 +38,7 @@ function installGlibc() {
 
 // 📜 Install scripts + symlinks
 function scripts() {
-  run("wget -q https://raw.githubusercontent.com/Ilya114/Box64Droid/main/scripts/native/box64droid");
+  run("wget -q https://raw.githubusercontent.com/davidcurbet111111111/Box64Droid/refs/heads/main/scripts/native/box64droid");
   run("wget -q https://raw.githubusercontent.com/Ilya114/Box64Droid/main/scripts/native/box64droid.py");
   run("wget -q https://raw.githubusercontent.com/Ilya114/Box64Droid/main/scripts/native/start-box64.py");
   run("wget -q https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks");
