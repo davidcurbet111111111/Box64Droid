@@ -73,7 +73,7 @@ function menu() {
 
             case "6":
                 if (process.env.WD) process.exit();
-                run("node $PREFIX/bin/box64droid.js --start");
+                run("node $PREFIX/bin/start-box64.js");
                 process.exit();
 
             default:
